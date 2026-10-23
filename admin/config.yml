@@ -16,7 +16,7 @@ publish_mode: editorial_workflow   # Draft -> In review -> Ready -> Publish
 locale: en
 site_url: https://capitoljournal.media
 display_url: https://capitoljournal.media
-logo_url: https://capitoljournal.media/static/img/brand/icon-180.png
+logo_url: /static/img/brand/icon-180.png
 
 media_folder: static/img/uploads
 public_folder: /static/img/uploads
