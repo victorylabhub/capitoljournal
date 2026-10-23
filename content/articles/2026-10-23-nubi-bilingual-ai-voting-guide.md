@@ -68,4 +68,4 @@ Mi Familia en Acción is registered as a [501(c)(3) nonprofit](https://impala.di
 
 Whatever tool you use, confirm dates, deadlines and polling places with your state election office, which you can reach through [vote.gov](https://vote.gov/). Ask about your own state and county, and be wary of any answer that says you can vote by text, by phone or on any day other than Tuesday, Nov. 3.
 
-*Capitol Journal and Votante Latino are both published by Atlas Media Network, LLC. Capitol Journal has no relationship with Mi Familia en Acción, Mi Familia Vota or Nubi.*
+*Capitol Journal and Votante Latino are both published by Atlas Media Network, LLC.*
