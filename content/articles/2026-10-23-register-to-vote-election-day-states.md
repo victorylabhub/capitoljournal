@@ -1,8 +1,8 @@
 ---
-title: "Missed the deadline? In 21 states and D.C., you can still register on Election Day"
+title: "Missed the deadline? In at least 20 states and D.C., you can still register on Election Day"
 section: elections
 kicker: How to vote
-dek: Registration deadlines have passed in much of the country, but same-day registration remains open in 21 states and the District of Columbia, according to the National Conference of State Legislatures.
+dek: Registration deadlines have passed in much of the country, but at least 20 states and the District of Columbia let eligible residents register and vote on Election Day, according to the National Conference of State Legislatures.
 author: Capitol Journal Staff
 date: 2026-10-23T15:30:00-04:00
 image: voter-flag-portrait
@@ -13,6 +13,10 @@ sources:
     url: https://www.ncsl.org/elections-and-campaigns/same-day-voter-registration
   - title: "Texas Secretary of State: news release on 2026 registration and early voting dates"
     url: https://www.sos.state.tx.us/about/newsreleases/2026/092826.shtml
+  - title: "National Conference of State Legislatures: Voter ID laws"
+    url: https://www.ncsl.org/elections-and-campaigns/voter-id
+  - title: "Montana Secretary of State: Elections"
+    url: https://sosmt.gov/elections/
   - title: "Vote.gov: Register to vote"
     url: https://vote.gov/
   - title: "USA.gov: How to register to vote"
@@ -24,7 +28,7 @@ But some states let eligible residents register and vote at the same time, inclu
 
 ## Where you can register on Election Day
 
-According to the [National Conference of State Legislatures](https://www.ncsl.org/elections-and-campaigns/same-day-voter-registration), these **21 states and the District of Columbia** allow voters to register on Election Day:
+According to the [National Conference of State Legislatures](https://www.ncsl.org/elections-and-campaigns/same-day-voter-registration), these **20 states and the District of Columbia** allow voters to register on Election Day:
 
 California, Colorado, Connecticut, Hawaii, Idaho, Illinois, Iowa, Maine, Maryland, Michigan, Minnesota, Nevada, New Hampshire, New Mexico, Utah, Vermont, Virginia, Washington, Wisconsin, Wyoming and the District of Columbia.
 
@@ -34,9 +38,13 @@ Rules differ. States generally ask same-day registrants to prove where they live
 
 In **Massachusetts, New York and North Carolina**, voters can register and vote at the same time during the early voting period, but not on Election Day, NCSL says.
 
-## A note on two other states
+## Montana: check with the state
 
-Montana allows late registration only until noon on the day before the election, so it does not offer registration on Election Day, NCSL reports. North Dakota does not require voters to register at all; voters there show identification at the polls instead.
+NCSL’s page is not consistent about Montana. Its state-by-state table says Montana repealed Election Day registration in 2021, while the text of the same page says a 2024 court ruling left the earlier law allowing Election Day registration in effect. We could not resolve the difference from NCSL alone. Montana voters should confirm the current rule with the [Montana secretary of state](https://sosmt.gov/elections/).
+
+## North Dakota
+
+North Dakota has no voter registration, NCSL notes. Eligible residents vote by showing identification at the polls; North Dakota is among the states that ask for ID, [according to NCSL](https://www.ncsl.org/elections-and-campaigns/voter-id).
 
 ## How to check your status
 

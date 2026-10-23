@@ -87,10 +87,10 @@
   "note": "Landing page; ENR runs at enr.indianavoters.in.gov."
  },
  "ia": {
-  "url": "https://electionresults.iowa.gov/",
+  "url": "https://electionresults.iowa.gov/IA/",
   "authority": "Iowa Secretary of State",
-  "verified": false,
-  "note": "Page loads ('List Elections') but shows no branding, and sos.iowa.gov results pages failed to fetch. SOS press releases say unofficial results are posted via sos.iowa.gov. Needs manual check."
+  "verified": true,
+  "note": "Linked as \"Election Results\" from sos.iowa.gov/iowans/election-results-statistics (checked Oct. 23, 2026)."
  },
  "ks": {
   "url": "https://sos.ks.gov/elections/election-results.html",
@@ -119,7 +119,7 @@
   "url": "https://elections.maryland.gov/elections/2026/index.html",
   "authority": "Maryland State Board of Elections",
   "verified": false,
-  "note": "Official domain, but this page could not be fetched (robots disallowed). Per-election pages such as elections.maryland.gov/elections/2026/index.html did load and link to results. Switched to 2026 elections page, which loaded and links to results."
+  "note": "Official domain, but this page could not be fetched (robots disallowed). Per-election pages such as elections.maryland.gov/elections/2026/index.html did load and link to results. Switched to 2026 elections page, which loaded and links to results. Oct. 23, 2026: 2026 page links only primary results so far; recheck before Nov. 3."
  },
  "ma": {
   "url": "https://electionstats.state.ma.us/",
@@ -163,8 +163,8 @@
  "nv": {
   "url": "https://silverstateelection.nv.gov/",
   "authority": "Nevada Secretary of State",
-  "verified": false,
-  "note": "Long-standing SOS 'Silver State Election Night Results' site (described in 2014 coverage). Fetches of this site and nvsos.gov were blocked by bot protection (Incapsula), so content and official link could not be confirmed."
+  "verified": true,
+  "note": "Loaded in a browser Oct. 23, 2026: branded \"Silver State Election Results\", Nevada Secretary of State, on nv.gov."
  },
  "nh": {
   "url": "https://www.sos.nh.gov/elections/elections/election-results",
@@ -222,8 +222,8 @@
  "pa": {
   "url": "https://www.electionreturns.pa.gov/",
   "authority": "Pennsylvania Department of State",
-  "verified": false,
-  "note": "Linked from the official pa.gov election-data page and named as the returns site in DOS press releases, but direct fetch failed, so I could not confirm it loads."
+  "verified": true,
+  "note": "Named as the official returns site in a Pennsylvania Department of State release (pa.gov, May 16, 2025); checked Oct. 23, 2026."
  },
  "ri": {
   "url": "https://elections.ri.gov/elections/previous-election-results",
@@ -283,7 +283,7 @@
   "url": "https://results.enr.clarityelections.com/WV/",
   "authority": "West Virginia Secretary of State",
   "verified": false,
-  "note": "WVSOS election-night reporting runs on Clarity (per WVSOS announcements republished by WV Press). sos.wv.gov results pages could not be fetched to confirm a stable landing link; apps.sos.wv.gov/elections/results covers only 2008-2017."
+  "note": "WVSOS election-night reporting runs on Clarity (per WVSOS announcements republished by WV Press). sos.wv.gov results pages could not be fetched to confirm a stable landing link; apps.sos.wv.gov/elections/results covers only 2008-2017. Oct. 23, 2026: SOS links the ENR site only through a tracking redirect; Clarity address lists no elections. Recheck before Nov. 3."
  },
  "wi": {
   "url": "https://elections.wi.gov/elections/election-results",

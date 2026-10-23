@@ -12,9 +12,13 @@ ai_assisted: true
 sources:
   - title: "U.S. House of Representatives: Directory of Representatives"
     url: https://www.house.gov/representatives
+  - title: "U.S. Senate: Class II senators, terms ending Jan. 3, 2027"
+    url: https://www.senate.gov/senators/Class_II.htm
+  - title: "Ballotpedia: United States Senate elections, 2026"
+    url: https://ballotpedia.org/United_States_Senate_elections,_2026
   - title: "Ballotpedia: Both gubernatorial and U.S. Senate elections are happening in 26 states in 2026 (March 9, 2026)"
     url: https://news.ballotpedia.org/2026/03/09/both-gubernatorial-and-u-s-senate-elections-are-happening-in-26-states-in-2026/
-  - title: "National Conference of State Legislatures: 2026 legislative races by state and chamber"
+  - title: "National Conference of State Legislatures: 2026 legislative races by state and chamber (updated June 25, 2026)"
     url: https://www.ncsl.org/elections-and-campaigns/2026-legislative-races-by-state-and-chamber
   - title: "Ballotpedia: 2026 ballot measures"
     url: https://ballotpedia.org/2026_ballot_measures
@@ -27,7 +31,7 @@ Tuesday, Nov. 3, is a midterm election. There is no presidential race on the bal
 
 **All 435 seats in the House of Representatives** are up. House members serve two-year terms, so the entire chamber is elected every even year. The [House directory](https://www.house.gov/representatives) lists the current members by state and district.
 
-**Thirty-five Senate seats** are on the ballot, [according to Ballotpedia](https://news.ballotpedia.org/2026/03/09/both-gubernatorial-and-u-s-senate-elections-are-happening-in-26-states-in-2026/). Thirty-three are regularly scheduled races for full six-year terms. The other two are special elections to fill the rest of terms that became vacant: in **Florida**, for the seat Marco Rubio left to become secretary of state, and in **Ohio**, for the seat JD Vance left to become vice president.
+**Thirty-five Senate seats** are on the ballot, [according to Ballotpedia](https://news.ballotpedia.org/2026/03/09/both-gubernatorial-and-u-s-senate-elections-are-happening-in-26-states-in-2026/). Thirty-three are regularly scheduled races for full six-year terms, for the seats the [Senate lists](https://www.senate.gov/senators/Class_II.htm) as Class II, whose terms end Jan. 3, 2027. The other two are special elections to fill the rest of terms that became vacant: in **Florida**, for the seat Marco Rubio left to become secretary of state, and in **Ohio**, for the seat JD Vance left to become vice president.
 
 ## Governors
 
