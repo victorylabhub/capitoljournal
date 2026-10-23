@@ -1,0 +1,31 @@
+{
+  "name": "Capitol Journal",
+  "domain": "capitoljournal.media",
+  "tagline": "A daily record for a working republic",
+  "motto": ["Facts", "Debate", "Consequences", "In context"],
+  "description": "Capitol Journal covers Congress, the White House, the courts and the states, with named sources, linked records and real dates.",
+  "owner": "Atlas Media Network, LLC",
+  "address": "36 Russ Street, 3rd Floor, Hartford, CT 06106, United States",
+  "email": "info@atlasmedianetwork.org",
+  "privacy_email": "privacy@atlasmedianetwork.org",
+  "owner_url": "https://www.atlasmedianetwork.org",
+  "election_date": "2026-11-03",
+  "prelaunch": false,
+  "sections": [
+    {"slug": "politics", "name": "Politics", "image": "press-camera-operator", "dek": "Campaigns, parties and the people who run for office."},
+    {"slug": "congress", "name": "Congress", "image": "press-control-room", "dek": "Bills, votes, hearings and the work of the House and Senate."},
+    {"slug": "white-house", "name": "White House", "image": "press-control-room", "dek": "The president, the executive branch and federal agencies."},
+    {"slug": "courts", "name": "Courts", "image": "camerawoman-field", "dek": "The Supreme Court and the cases that shape public life."},
+    {"slug": "states", "name": "States", "image": "citizen-flag", "dek": "Governors, legislatures and election offices across the 50 states."},
+    {"slug": "policy", "name": "Policy", "image": "press-camera-operator", "dek": "What laws and rules do, and whom they affect."},
+    {"slug": "elections", "name": "Elections", "image": "voter-flag-portrait", "dek": "The 2026 midterm elections, reported from official sources."},
+    {"slug": "opinion", "name": "Opinion", "image": "camerawoman-field", "dek": "Signed commentary, clearly separated from news reporting."}
+  ],
+  "photos": {
+    "press-camera-operator": {"alt": "A camera operator wearing a headset films an event from behind a studio camera.", "pos": "50% 40%"},
+    "press-control-room": {"alt": "A camera operator seated behind a broadcast camera watches its monitor in a darkened hall.", "pos": "50% 55%"},
+    "voter-flag-portrait": {"alt": "A young woman wrapped in an American flag looks at the camera.", "pos": "50% 35%"},
+    "citizen-flag": {"alt": "A young man looks over his shoulder while holding an American flag across his back.", "pos": "50% 45%"},
+    "camerawoman-field": {"alt": "A videographer looks through the viewfinder of a handheld camera outdoors.", "pos": "60% 45%"}
+  }
+}

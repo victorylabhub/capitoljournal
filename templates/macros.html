@@ -1,0 +1,31 @@
+{% macro picture(ph, cls="", sizes="(max-width: 700px) 100vw, 50vw", eager=False) %}
+{% if ph %}<img class="{{ cls }}" src="{{ ph.src }}"{% if ph.srcset %} srcset="{{ ph.srcset }}" sizes="{{ sizes }}"{% endif %} alt="{{ ph.alt }}" style="object-position: {{ ph.pos }}"{% if not eager %} loading="lazy"{% endif %} decoding="async">{% endif %}
+{% endmacro %}
+
+{% macro byline(a) %}
+<p class="by">By <strong>{{ a.author }}</strong> · <time datetime="{{ a.date.isoformat() }}">{{ a.date|ap_date }}</time>{% if a.minutes %} · {{ a.minutes }} min read{% endif %}</p>
+{% endmacro %}
+
+{% macro card(a, img=True, dek=False, level=3) %}
+<article class="card">
+  {% if img and a.photo %}<a class="card-img" href="{{ a.url }}" tabindex="-1" aria-hidden="true">{{ picture(a.photo, sizes="(max-width: 700px) 110px, 25vw") }}</a>{% endif %}
+  <div>
+    <a class="kicker" href="/{{ a.section }}/">{{ a.sec.name }}</a>
+    <h{{ level }} class="card-h"><a href="{{ a.url }}">{{ a.title }}</a></h{{ level }}>
+    {% if dek %}<p class="card-dek">{{ a.dek }}</p>{% endif %}
+    {{ byline(a) }}
+  </div>
+</article>
+{% endmacro %}
+
+{% macro vote_box(site, title="Voting on Nov. 3?") %}
+<aside class="vote" aria-label="Official voter information">
+  <h2>{{ title }}</h2>
+  <p>Registration status, deadlines, ID rules and polling places come from official sources only. Start at vote.gov, which links to your state election office.</p>
+  <a class="btn" href="https://vote.gov/" rel="noopener">Go to vote.gov <span aria-hidden="true">↗</span></a>
+</aside>
+{% endmacro %}
+
+{% macro countdown(site) %}
+<p class="count-line"><span data-countdown="{{ site.election_date }}">Election Day is Tuesday, Nov. 3, 2026.</span></p>
+{% endmacro %}

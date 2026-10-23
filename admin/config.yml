@@ -1,0 +1,73 @@
+# Newsroom panel (Decap CMS). Each story is saved as a Markdown file in the
+# repository. With the editorial workflow, drafts live on their own branch
+# (cms/...) and reach main, and the public site, only when published.
+backend:
+  name: github
+  repo: victorylabhub/capitoljournal
+  branch: main
+  site_domain: capitoljournal.netlify.app
+  commit_messages:
+    create: "New story: {{slug}}"
+    update: "Edit story: {{slug}}"
+    delete: "Delete story: {{slug}}"
+    uploadMedia: "Upload image: {{path}}"
+
+publish_mode: editorial_workflow   # Draft -> In review -> Ready -> Publish
+locale: en
+site_url: https://capitoljournal.media
+display_url: https://capitoljournal.media
+logo_url: https://capitoljournal.media/static/img/brand/icon-180.png
+
+media_folder: static/img/uploads
+public_folder: /static/img/uploads
+
+collections:
+  - name: articles
+    label: Stories
+    label_singular: Story
+    folder: content/articles
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: frontmatter
+    summary: "[{{section}}] {{title}}"
+    sortable_fields: [date, title, section]
+    view_groups:
+      - { label: Section, field: section }
+    fields:
+      - { label: Headline, name: title, widget: string }
+      - label: Section
+        name: section
+        widget: select
+        options:
+          - { label: Politics, value: politics }
+          - { label: Congress, value: congress }
+          - { label: White House, value: white-house }
+          - { label: Courts, value: courts }
+          - { label: States, value: states }
+          - { label: Policy, value: policy }
+          - { label: Elections, value: elections }
+          - { label: Opinion, value: opinion }
+      - { label: Kicker (optional sub-label), name: kicker, widget: string, required: false }
+      - { label: Dek (one-sentence summary), name: dek, widget: text }
+      - { label: Byline, name: author, widget: string, default: "Capitol Journal Staff", hint: "Every story must be signed." }
+      - { label: Published, name: date, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { label: Updated (leave empty unless the story changed), name: updated, widget: datetime, format: "YYYY-MM-DDTHH:mm:ssZ", required: false }
+      - { label: Feature on the home page, name: featured, widget: boolean, default: false }
+      - label: Lead image
+        name: image
+        widget: image
+        required: false
+        hint: "Upload a licensed image, or type a library key: press-camera-operator, press-control-room, voter-flag-portrait, citizen-flag, camerawoman-field."
+      - { label: Image description (alt text), name: image_alt, widget: string, required: false }
+      - { label: Caption, name: image_caption, widget: string, required: false }
+      - { label: Image credit, name: image_credit, widget: string, required: false }
+      - { label: Drafted with AI assistance, name: ai_assisted, widget: boolean, default: false, hint: "If on, the story shows a disclosure line." }
+      - { label: Body, name: body, widget: markdown }
+      - label: Sources
+        name: sources
+        widget: list
+        hint: "Link every fact to its source, preferably a primary one."
+        fields:
+          - { label: Source name, name: title, widget: string }
+          - { label: Link, name: url, widget: string }

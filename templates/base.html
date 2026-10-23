@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% set page_title = (title ~ " | Capitol Journal") if title else "Capitol Journal: " ~ site.tagline %}
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ description or site.description }}">
+{% if canonical %}<link rel="canonical" href="https://{{ site.domain }}{{ canonical }}">{% endif %}
+<meta property="og:site_name" content="Capitol Journal">
+<meta property="og:title" content="{{ title or 'Capitol Journal' }}">
+<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:type" content="{{ og_type or 'website' }}">
+{% if canonical %}<meta property="og:url" content="https://{{ site.domain }}{{ canonical }}">{% endif %}
+<meta property="og:image" content="https://{{ site.domain }}{{ og_image or '/static/img/brand/og.jpg' }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#13244D">
+<link rel="icon" href="/static/img/brand/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/static/img/brand/icon-180.png">
+<link rel="alternate" type="application/rss+xml" title="Capitol Journal" href="/feed.xml">
+<link rel="preload" href="/static/fonts/libre-caslon-text-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/site.css?v={{ site.v }}">
+{% block head %}{% endblock %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Today">
+  <div class="wrap">
+    <span class="util-date" data-today></span>
+    <a class="util-elex" href="/elections/">2026 Midterm Elections · Nov. 3</a>
+    <a class="util-vote" href="https://vote.gov/" rel="noopener">Official voter information: vote.gov</a>
+  </div>
+</div>
+<header class="mast">
+  <div class="wrap mast-row">
+    <p class="mast-side" aria-hidden="true">{% for w in site.motto %}{{ w }}<br>{% endfor %}</p>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" data-menu><span class="sr">Menu</span><i></i></button>
+    <a class="logo" href="/"><img src="/static/img/brand/logo-navy.png" width="889" height="145" alt="Capitol Journal"></a>
+    <p class="mast-side r" aria-hidden="true">{{ site.tagline }}</p>
+  </div>
+</header>
+<nav class="nav" id="site-nav" aria-label="Sections">
+  <ul>
+    {% for s in sections %}
+    <li><a href="/{{ s.slug }}/"{% if active == s.slug %} aria-current="page"{% endif %}>{{ s.name }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <img class="foot-logo" src="/static/img/brand/logo-white.png" width="889" height="145" alt="Capitol Journal">
+    <div class="foot-cols">
+      <div><p>{{ site.description }}</p></div>
+      <div><h2>Sections</h2><ul>{% for s in sections[:4] %}<li><a href="/{{ s.slug }}/">{{ s.name }}</a></li>{% endfor %}</ul></div>
+      <div><h2><span class="sr">More sections</span>&nbsp;</h2><ul>{% for s in sections[4:] %}<li><a href="/{{ s.slug }}/">{{ s.name }}</a></li>{% endfor %}</ul></div>
+      <div><h2>About</h2><ul>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/standards/">Editorial Standards</a></li>
+        <li><a href="/standards/#corrections">Corrections</a></li>
+        <li><a href="/privacy/">Privacy Notice</a></li>
+        <li><a href="mailto:{{ site.email }}">Contact</a></li>
+        <li><a href="/feed.xml">RSS</a></li>
+      </ul></div>
+    </div>
+    <p class="own"><strong>Capitol Journal is a publication of {{ site.owner }}</strong>, {{ site.address }}. <a href="mailto:{{ site.email }}">{{ site.email }}</a> · <a href="{{ site.owner_url }}">atlasmedianetwork.org</a><br>
+    Capitol Journal is not affiliated with any other publication, website or organization with a similar name. © {{ build_date.year }} {{ site.owner }}.</p>
+  </div>
+</footer>
+<script src="/static/site.js?v={{ site.v }}" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

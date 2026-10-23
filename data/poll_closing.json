@@ -1,0 +1,368 @@
+{
+  "source_notes": "Poll closing times for the Nov. 3, 2026 general election, in Eastern Standard Time (DST ends Nov. 1, 2026). Primary compilations are 2026-specific: 270toWin 'Poll Closing Times' (2026 midterms) and The Green Papers G26 polling hours; mail-ballot deadlines from state law/news (Utah 2026). 'most_et' = time when most polls close; 'last_et' = last polls in the state. For all-mail states (CO, HI, OR, UT, WA) the value is the in-person ballot drop-off deadline. 12:00 a.m. and 1:00 a.m. refer to early Nov. 4 ET. Groups are by most_et; the 1:00 a.m. group is empty (only Alaska's Aleutians close then, as last_et). Individual polling places can close earlier; voters in line at closing may still vote.",
+  "sources": [
+    "https://www.270towin.com/poll-closing-times",
+    "https://www.270towin.com/content/local-poll-closing-times-november-2026-general-election",
+    "https://www.thegreenpapers.com/G26/PollingHours.phtml",
+    "https://www.upr.org/utah-news/2026-01-12/a-new-postal-service-postmark-policy-could-negate-some-utah-ballots"
+  ],
+  "states": {
+    "ak": {
+      "most_et": "12:00 a.m.",
+      "last_et": "1:00 a.m.",
+      "note": "8 p.m. AKST; Aleutian Islands west of 169°30' (Hawaii-Aleutian time) close 1:00 a.m. ET. Times are early Nov. 4 ET."
+    },
+    "al": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": "7 p.m. CT; a few Eastern-time border localities may close 7 p.m. ET."
+    },
+    "ar": {
+      "most_et": "8:30 p.m.",
+      "last_et": "8:30 p.m.",
+      "note": "7:30 p.m. CT."
+    },
+    "az": {
+      "most_et": "9:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "7 p.m. MST (Arizona does not observe DST)."
+    },
+    "ca": {
+      "most_et": "11:00 p.m.",
+      "last_et": "11:00 p.m.",
+      "note": "8 p.m. PT; every voter is mailed a ballot; in-person voting also available."
+    },
+    "co": {
+      "most_et": "9:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "All-mail state: ballots must be received (drop box/voting center) by 7 p.m. MT = 9:00 p.m. ET."
+    },
+    "ct": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": ""
+    },
+    "dc": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": ""
+    },
+    "de": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": ""
+    },
+    "fl": {
+      "most_et": "7:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": "Most of state Eastern time (7 p.m. ET); western Panhandle in Central time closes 8:00 p.m. ET."
+    },
+    "ga": {
+      "most_et": "7:00 p.m.",
+      "last_et": "7:00 p.m.",
+      "note": ""
+    },
+    "hi": {
+      "most_et": "12:00 a.m.",
+      "last_et": "12:00 a.m.",
+      "note": "All-mail state: ballots must be received / dropped off by 7 p.m. HST = 12:00 a.m. ET (Nov. 4). Voter service centers also close 7 p.m. HST."
+    },
+    "ia": {
+      "most_et": "9:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "8 p.m. CT."
+    },
+    "id": {
+      "most_et": "10:00 p.m.",
+      "last_et": "11:00 p.m.",
+      "note": "8 p.m. local; most of state Mountain time (10 p.m. ET); northern Panhandle in Pacific time closes 11:00 p.m. ET."
+    },
+    "il": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": "7 p.m. CT."
+    },
+    "in": {
+      "most_et": "6:00 p.m.",
+      "last_et": "7:00 p.m.",
+      "note": "6 p.m. local; most of state Eastern (6 p.m. ET); NW and SW corner counties in Central time close 7:00 p.m. ET."
+    },
+    "ks": {
+      "most_et": "8:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "7 p.m. local (counties may vary hours); four western counties in Mountain time close 9:00 p.m. ET."
+    },
+    "ky": {
+      "most_et": "6:00 p.m.",
+      "last_et": "7:00 p.m.",
+      "note": "6 p.m. local; eastern half in Eastern time (6 p.m. ET); western half in Central time closes 7:00 p.m. ET."
+    },
+    "la": {
+      "most_et": "9:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "8 p.m. CT."
+    },
+    "ma": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": ""
+    },
+    "md": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": ""
+    },
+    "me": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": ""
+    },
+    "mi": {
+      "most_et": "8:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "8 p.m. local; four Upper Peninsula counties in Central time close 9:00 p.m. ET."
+    },
+    "mn": {
+      "most_et": "9:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "8 p.m. CT."
+    },
+    "mo": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": "7 p.m. CT."
+    },
+    "ms": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": "7 p.m. CT."
+    },
+    "mt": {
+      "most_et": "10:00 p.m.",
+      "last_et": "10:00 p.m.",
+      "note": "8 p.m. MT."
+    },
+    "nc": {
+      "most_et": "7:30 p.m.",
+      "last_et": "7:30 p.m.",
+      "note": "County boards may extend hours in extraordinary circumstances."
+    },
+    "nd": {
+      "most_et": "8:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "Closing set locally (7-9 p.m. local); most Central-time precincts close 7 p.m. CT (8 p.m. ET); Fargo/Cass Co. 8 p.m. CT and Mountain-time SW counties 7 p.m. MT close 9:00 p.m. ET. Green Papers notes local option could run later."
+    },
+    "ne": {
+      "most_et": "9:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "8 p.m. CT / 7 p.m. MT - both zones close simultaneously."
+    },
+    "nh": {
+      "most_et": "7:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": "Closing set by town (no earlier than 7 p.m.); most towns close 7 p.m. ET, larger cities at 8 p.m. ET. Networks/AP treat 8 p.m. ET as the state's poll close."
+    },
+    "nj": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": ""
+    },
+    "nm": {
+      "most_et": "9:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "7 p.m. MT."
+    },
+    "nv": {
+      "most_et": "10:00 p.m.",
+      "last_et": "10:00 p.m.",
+      "note": "7 p.m. PT; every voter is mailed a ballot."
+    },
+    "ny": {
+      "most_et": "9:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": ""
+    },
+    "oh": {
+      "most_et": "7:30 p.m.",
+      "last_et": "7:30 p.m.",
+      "note": ""
+    },
+    "ok": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": "7 p.m. CT."
+    },
+    "or": {
+      "most_et": "11:00 p.m.",
+      "last_et": "11:00 p.m.",
+      "note": "All-mail state: ballots must be dropped off by 8 p.m. local (11:00 p.m. ET; Malheur Co., in Mountain time, 10:00 p.m. ET). Mailed ballots postmarked by Election Day also count if received within 7 days."
+    },
+    "pa": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": ""
+    },
+    "ri": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": ""
+    },
+    "sc": {
+      "most_et": "7:00 p.m.",
+      "last_et": "7:00 p.m.",
+      "note": ""
+    },
+    "sd": {
+      "most_et": "8:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "7 p.m. local; western Mountain-time half closes 9:00 p.m. ET."
+    },
+    "tn": {
+      "most_et": "8:00 p.m.",
+      "last_et": "8:00 p.m.",
+      "note": "8 p.m. ET / 7 p.m. CT - both zones close simultaneously."
+    },
+    "tx": {
+      "most_et": "8:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "7 p.m. local; El Paso and Hudspeth counties (Mountain time) close 9:00 p.m. ET."
+    },
+    "ut": {
+      "most_et": "10:00 p.m.",
+      "last_et": "10:00 p.m.",
+      "note": "Effectively all-mail: ballots must be in election officials' hands (drop box/vote center) by 8 p.m. MT = 10:00 p.m. ET; postmark no longer sufficient (2025 law). In-person polls also close 8 p.m. MT."
+    },
+    "va": {
+      "most_et": "7:00 p.m.",
+      "last_et": "7:00 p.m.",
+      "note": ""
+    },
+    "vt": {
+      "most_et": "7:00 p.m.",
+      "last_et": "7:00 p.m.",
+      "note": ""
+    },
+    "wa": {
+      "most_et": "11:00 p.m.",
+      "last_et": "11:00 p.m.",
+      "note": "All-mail state: drop boxes close 8 p.m. PT = 11:00 p.m. ET; mailed ballots must be postmarked by Election Day."
+    },
+    "wi": {
+      "most_et": "9:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "8 p.m. CT."
+    },
+    "wv": {
+      "most_et": "7:30 p.m.",
+      "last_et": "7:30 p.m.",
+      "note": ""
+    },
+    "wy": {
+      "most_et": "9:00 p.m.",
+      "last_et": "9:00 p.m.",
+      "note": "7 p.m. MT."
+    }
+  },
+  "groups": [
+    {
+      "et": "6:00 p.m.",
+      "states": [
+        "in",
+        "ky"
+      ]
+    },
+    {
+      "et": "7:00 p.m.",
+      "states": [
+        "fl",
+        "ga",
+        "nh",
+        "sc",
+        "va",
+        "vt"
+      ]
+    },
+    {
+      "et": "7:30 p.m.",
+      "states": [
+        "nc",
+        "oh",
+        "wv"
+      ]
+    },
+    {
+      "et": "8:00 p.m.",
+      "states": [
+        "al",
+        "ct",
+        "dc",
+        "de",
+        "il",
+        "ks",
+        "ma",
+        "md",
+        "me",
+        "mi",
+        "mo",
+        "ms",
+        "nd",
+        "nj",
+        "ok",
+        "pa",
+        "ri",
+        "sd",
+        "tn",
+        "tx"
+      ]
+    },
+    {
+      "et": "8:30 p.m.",
+      "states": [
+        "ar"
+      ]
+    },
+    {
+      "et": "9:00 p.m.",
+      "states": [
+        "az",
+        "co",
+        "ia",
+        "la",
+        "mn",
+        "ne",
+        "nm",
+        "ny",
+        "wi",
+        "wy"
+      ]
+    },
+    {
+      "et": "10:00 p.m.",
+      "states": [
+        "id",
+        "mt",
+        "nv",
+        "ut"
+      ]
+    },
+    {
+      "et": "11:00 p.m.",
+      "states": [
+        "ca",
+        "or",
+        "wa"
+      ]
+    },
+    {
+      "et": "12:00 a.m.",
+      "states": [
+        "ak",
+        "hi"
+      ]
+    },
+    {
+      "et": "1:00 a.m.",
+      "states": []
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Netlify builds the site from this repository on every push to main.
+# Stories published from the newsroom panel (/admin/) trigger a new deploy.
+[build]
+  command = "pip install -r requirements.txt && python3 build.py"
+  publish = "dist"
+
+
+[[redirects]]
+  from = "https://www.capitoljournal.media/*"
+  to = "https://capitoljournal.media/:splat"
+  status = 301
+  force = true

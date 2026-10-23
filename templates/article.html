@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% from "macros.html" import picture, card %}
+{% set title = a.title %}
+{% set description = a.dek %}
+{% set og_type = "article" %}
+{% set og_image = a.photo.src if a.photo else None %}
+{% block main %}
+<article class="art">
+  <header class="art-h">
+    <a class="kicker" href="/{{ a.section }}/">{{ a.sec.name }}{% if a.kicker %} · {{ a.kicker }}{% endif %}</a>
+    <h1>{{ a.title }}</h1>
+    <p class="dek">{{ a.dek }}</p>
+    <div class="meta">
+      <p class="by">By <strong>{{ a.author }}</strong><br>
+        Published <time datetime="{{ a.date.isoformat() }}">{{ a.date|ap_date }}, {{ a.date|ap_time }}</time>{% if a.updated %} · Updated <time datetime="{{ a.updated.isoformat() }}">{{ a.updated|ap_date }}, {{ a.updated|ap_time }}</time>{% endif %}</p>
+      <div class="share" data-share>
+        <a data-net="x" href="#" rel="noopener">Share on X</a>
+        <a data-net="fb" href="#" rel="noopener">Facebook</a>
+        <a data-net="mail" href="#">Email</a>
+        <button type="button" data-net="copy">Copy link</button>
+      </div>
+    </div>
+  </header>
+  {% if a.photo %}
+  <figure class="art-fig">
+    {{ picture(a.photo, sizes="(max-width: 900px) 100vw, 900px", eager=True) }}
+    <figcaption>{{ a.image_caption or a.photo.alt }}{% if a.image_credit %} <span class="credit">{{ a.image_credit }}</span>{% endif %}</figcaption>
+  </figure>
+  {% endif %}
+  <div class="body">{{ a.html|safe }}</div>
+  {% if a.sources %}
+  <section class="box sources" aria-labelledby="src-h">
+    <h2 id="src-h">Sources</h2>
+    <ol>{% for s in a.sources %}<li><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a></li>{% endfor %}</ol>
+  </section>
+  {% endif %}
+  <footer class="disc">
+    {% if a.ai_assisted %}<p>This article was drafted with AI assistance. Every fact in it was checked against the sources listed above, as of the publication date.</p>{% endif %}
+    <p>Spotted an error? Write to <a href="mailto:{{ site.email }}">{{ site.email }}</a>. See our <a href="/standards/#corrections">corrections policy</a>.</p>
+  </footer>
+</article>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":{{ a.title|tojson }},"description":{{ a.dek|tojson }},
+ "datePublished":"{{ a.date.isoformat() }}"{% if a.updated %},"dateModified":"{{ a.updated.isoformat() }}"{% endif %},
+ "inLanguage":"en-US","articleSection":{{ a.sec.name|tojson }},
+ "author":{"@type":"Organization","name":{{ a.author|tojson }}},
+ {% if a.photo %}"image":"https://{{ site.domain }}{{ a.photo.src }}",{% endif %}
+ "mainEntityOfPage":"https://{{ site.domain }}{{ a.url }}",
+ "publisher":{"@type":"NewsMediaOrganization","name":"Capitol Journal","url":"https://{{ site.domain }}/",
+   "logo":{"@type":"ImageObject","url":"https://{{ site.domain }}/static/img/brand/logo-navy.png"},
+   "parentOrganization":{"@type":"Organization","name":{{ site.owner|tojson }},"url":{{ site.owner_url|tojson }}}}}
+</script>
+{% if related %}
+<div class="wrap">
+  <section class="sec" aria-labelledby="rel-h">
+    <div class="sec-hd"><h2 id="rel-h">More from Capitol Journal</h2><a class="more" href="/{{ a.section }}/">More {{ a.sec.name }} <span aria-hidden="true">→</span></a></div>
+    <div class="cards">{% for r in related %}{{ card(r) }}{% endfor %}</div>
+  </section>
+</div>
+{% endif %}
+{% endblock %}

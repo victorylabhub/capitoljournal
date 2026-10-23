@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% from "macros.html" import card, vote_box %}
+{% set title = "2026 Midterm Elections" %}
+{% set description = "The Nov. 3, 2026 midterm elections: what is on the ballot, official results sites for every state, and poll closing times." %}
+{% block main %}
+<header class="ehero">
+  <div class="wrap">
+    <span class="label">2026 Midterm Elections</span>
+    <h1>Election Night: Official Results, State by State</h1>
+    <p>We report results only as election authorities publish them, with the time and source of every update. We do not project winners or call races ourselves.</p>
+    <div class="count">
+      <div><b data-countdown-num="{{ site.election_date }}">Nov. 3</b><span data-countdown-label>Election Day</span></div>
+      <div><b>435</b><span>House seats</span></div>
+      <div><b>35</b><span>Senate seats</span></div>
+      <div><b>36</b><span>Governorships</span></div>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <p class="status" role="status"><i class="dot" aria-hidden="true"></i><span data-elex-status="{{ site.election_date }}"><strong>Status:</strong> Polls have not closed. Results will appear on each state’s official site after polls close on Nov. 3.</span></p>
+
+  <section class="eg">
+    <div>
+      <div class="sec-hd"><h2>Coverage</h2></div>
+      {% if items %}
+      <div class="sec-list">{% for a in items %}{{ card(a, dek=True) }}{% endfor %}</div>
+      {% else %}
+      <p class="empty">Our election coverage will appear here as it is published.</p>
+      {% endif %}
+    </div>
+    <aside>
+      {{ vote_box(site) }}
+      <div class="box">
+        <h2>How we report results</h2>
+        <ul>
+          <li>Official election authorities only</li>
+          <li>A time stamp and a source on every update</li>
+          <li>No projections or race calls of our own</li>
+          <li>Results are unofficial until each state certifies them</li>
+          <li>Corrections are noted in the story</li>
+        </ul>
+      </div>
+    </aside>
+  </section>
+
+  {% if closing %}
+  <section class="sec" aria-labelledby="close-h" id="poll-closing">
+    <div class="sec-hd"><h2 id="close-h">When Polls Close</h2></div>
+    <p class="intro">Time when most polls close in each state, in Eastern Time on the night of Nov. 3 (12 a.m. means early Nov. 4). Some states have areas that close later; voters in line at closing time can still vote. Confirm local hours with your state election office.</p>
+    <ol class="close-list">
+      {% for g in closing %}<li><b>{{ g.et }}</b><span>{{ g.names|join(", ") }}</span></li>{% endfor %}
+    </ol>
+    <p class="fine">Compiled from state election laws and calendars as summarized by <a href="https://www.270towin.com/poll-closing-times" rel="noopener">270toWin</a> and <a href="https://www.thegreenpapers.com/G26/PollingHours.phtml" rel="noopener">The Green Papers</a>. Confirm with your state election office.</p>
+  </section>
+  {% endif %}
+
+  <section class="sec" aria-labelledby="res-h" id="results">
+    <div class="sec-hd"><h2 id="res-h">Official Results by State</h2></div>
+    <p class="intro">Each link goes to the results page published by the state’s own election authority. Election-night numbers are unofficial and can change as ballots are counted.</p>
+    <label class="sr" for="res-q">Find a state</label>
+    <input id="res-q" class="search" type="search" placeholder="Find a state" autocomplete="off" data-filter="#res-table tbody tr">
+    <table id="res-table">
+      <thead><tr><th scope="col">State</th><th scope="col">Election authority</th><th scope="col">Official results</th></tr></thead>
+      <tbody>
+        {% for r in results %}
+        <tr data-name="{{ r.name|lower }}"><td>{{ r.name }}</td><td>{{ r.authority }}</td><td><a href="{{ r.url }}" rel="noopener">Results site <span aria-hidden="true">↗</span><span class="sr"> for {{ r.name }} (opens the official site)</span></a></td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <p class="fine">{{ results|length }} of 51 jurisdictions listed. A state is listed only after its link has been checked against the authority’s own website. For any state not shown, use <a href="https://vote.gov/" rel="noopener">vote.gov</a> to reach its election office.</p>
+  </section>
+</div>
+{% endblock %}

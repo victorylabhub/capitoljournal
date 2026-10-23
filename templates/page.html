@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% set title = p.title %}
+{% set description = p.dek %}
+{% block main %}
+<article class="art page">
+  <header class="art-h">
+    {% if p.kicker %}<span class="kicker">{{ p.kicker }}</span>{% endif %}
+    <h1>{{ p.title }}</h1>
+    {% if p.dek %}<p class="dek">{{ p.dek }}</p>{% endif %}
+    {% if p.updated %}<p class="by">Last updated <time datetime="{{ p.updated.isoformat() }}">{{ p.updated|ap_date }}</time></p>{% endif %}
+  </header>
+  {% if p.notice %}<p class="notice" role="note">{{ p.notice }}</p>{% endif %}
+  <div class="body">{{ p.html|safe }}</div>
+</article>
+{% endblock %}

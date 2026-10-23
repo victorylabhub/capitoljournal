@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% from "macros.html" import picture, card, vote_box %}
+{% set title = sec.name %}
+{% set description = sec.dek %}
+{% block main %}
+<header class="sec-hero">
+  {{ picture(img(sec.image), cls="sec-hero-img", sizes="100vw", eager=True) }}
+  <div class="wrap sec-hero-txt">
+    <h1>{{ sec.name }}</h1>
+    <p>{{ sec.dek }}</p>
+  </div>
+</header>
+<div class="wrap">
+  {% if items %}
+  <div class="sec-list">
+    {% for a in items %}{{ card(a, dek=True, level=2) }}{% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-sec">
+    <p>Capitol Journal’s {{ sec.name }} coverage is being reported and checked. Stories will appear here as soon as they are published.</p>
+    <p>In the meantime, read our <a href="/elections/">2026 midterm elections coverage</a>.</p>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

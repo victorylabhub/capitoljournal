@@ -1,0 +1,300 @@
+{
+ "al": {
+  "url": "https://www.sos.alabama.gov/alabama-votes/voter/election-data",
+  "authority": "Alabama Secretary of State",
+  "verified": true,
+  "note": "Official SOS election data/results index (precinct and statewide files). Unofficial election-night reporting is served from alabamavotes.gov (www2.alabamavotes.gov/electionnight); could not confirm that page's content."
+ },
+ "ak": {
+  "url": "https://www.elections.alaska.gov/election-results/",
+  "authority": "Alaska Division of Elections",
+  "verified": true,
+  "note": "Lists unofficial election-night results and links to official results search."
+ },
+ "az": {
+  "url": "https://azsos.gov/elections/election-information/unofficial-enr",
+  "authority": "Arizona Secretary of State",
+  "verified": true,
+  "note": "SOS election-night results info page; links to the live ENR site results.arizona.vote."
+ },
+ "ar": {
+  "url": "https://www.sos.arkansas.gov/elections/research/election-results",
+  "authority": "Arkansas Secretary of State",
+  "verified": true,
+  "note": "Links to ENR on arkansas.tally-enr.com. Page notes a transition to a new ENR vendor."
+ },
+ "ca": {
+  "url": "https://electionresults.sos.ca.gov/",
+  "authority": "California Secretary of State",
+  "verified": true,
+  "note": "Named as the state election results website on official sos.ca.gov voter-guide pages. Direct fetch was blocked by bot protection (Incapsula)."
+ },
+ "co": {
+  "url": "https://www.coloradosos.gov/pubs/elections/resultsData.html",
+  "authority": "Colorado Secretary of State",
+  "verified": true,
+  "note": "Results & data landing page. On election night SOS posts the live ENR (Clarity) link on its home page."
+ },
+ "ct": {
+  "url": "https://portal.ct.gov/sots/election-services/election-results/election-results",
+  "authority": "Connecticut Secretary of the State",
+  "verified": true,
+  "note": "Directory linking the Elections Management System (electronic results since 2018) and electionhistory.ct.gov."
+ },
+ "de": {
+  "url": "https://elections.delaware.gov/results/index.shtml",
+  "authority": "Delaware Department of Elections",
+  "verified": true
+ },
+ "dc": {
+  "url": "https://electionresults.dcboe.org/",
+  "authority": "District of Columbia Board of Elections",
+  "verified": true,
+  "note": "Linked as 'Election Results' from dcboe.org."
+ },
+ "fl": {
+  "url": "https://results.elections.myflorida.com/",
+  "authority": "Florida Department of State, Division of Elections",
+  "verified": true,
+  "note": "Page metadata names the Division of Elections' Election Results Reporting System. The body is frame-based, so content was minimal."
+ },
+ "ga": {
+  "url": "https://sos.ga.gov/page/election-results",
+  "authority": "Georgia Secretary of State",
+  "verified": true,
+  "note": "Results landing page on sos.ga.gov. Live ENR is results.sos.ga.gov (fetched, but its JS app shows no branding); older links go to results.enr.clarityelections.com/GA/."
+ },
+ "hi": {
+  "url": "https://elections.hawaii.gov/election-results/",
+  "authority": "Hawaii Office of Elections",
+  "verified": true
+ },
+ "id": {
+  "url": "https://voteidaho.gov/election-results/",
+  "authority": "Idaho Secretary of State",
+  "verified": true
+ },
+ "il": {
+  "url": "https://www.elections.il.gov/ElectionOperations/ElectionVoteTotals.aspx",
+  "authority": "Illinois State Board of Elections",
+  "verified": true,
+  "note": "Statewide vote totals. Illinois has no statewide unofficial ENR; on election night, counties and election authorities report results."
+ },
+ "in": {
+  "url": "https://www.in.gov/sos/elections/election-results/",
+  "authority": "Indiana Secretary of State, Election Division",
+  "verified": true,
+  "note": "Landing page; ENR runs at enr.indianavoters.in.gov."
+ },
+ "ia": {
+  "url": "https://electionresults.iowa.gov/",
+  "authority": "Iowa Secretary of State",
+  "verified": false,
+  "note": "Page loads ('List Elections') but shows no branding, and sos.iowa.gov results pages failed to fetch. SOS press releases say unofficial results are posted via sos.iowa.gov. Needs manual check."
+ },
+ "ks": {
+  "url": "https://sos.ks.gov/elections/election-results.html",
+  "authority": "Kansas Secretary of State",
+  "verified": true,
+  "note": "Mainly official results (PDF/Excel). Page says unofficial results are available on request."
+ },
+ "ky": {
+  "url": "https://elect.ky.gov/results/",
+  "authority": "Kentucky State Board of Elections",
+  "verified": true
+ },
+ "la": {
+  "url": "https://voterportal.sos.la.gov/graphical",
+  "authority": "Louisiana Secretary of State",
+  "verified": true,
+  "note": "Live graphical results app with SOS branding."
+ },
+ "me": {
+  "url": "https://www.maine.gov/sos/elections-voting/election-results-data",
+  "authority": "Maine Secretary of State, Bureau of Corporations, Elections and Commissions",
+  "verified": true,
+  "note": "Results are posted as downloadable files. Maine has no live statewide ENR."
+ },
+ "md": {
+  "url": "https://elections.maryland.gov/elections/2026/index.html",
+  "authority": "Maryland State Board of Elections",
+  "verified": false,
+  "note": "Official domain, but this page could not be fetched (robots disallowed). Per-election pages such as elections.maryland.gov/elections/2026/index.html did load and link to results. Switched to 2026 elections page, which loaded and links to results."
+ },
+ "ma": {
+  "url": "https://electionstats.state.ma.us/",
+  "authority": "Secretary of the Commonwealth of Massachusetts, Elections Division",
+  "verified": true,
+  "note": "Certified results database. Massachusetts has no statewide election-night ENR."
+ },
+ "mi": {
+  "url": "https://www.michigan.gov/sos/elections/election-results-and-data",
+  "authority": "Michigan Department of State (Secretary of State)",
+  "verified": true,
+  "note": "Links to MVIC results (mvic.sos.state.mi.us/votehistory)."
+ },
+ "mn": {
+  "url": "https://electionresults.sos.mn.gov/",
+  "authority": "Minnesota Secretary of State",
+  "verified": true
+ },
+ "ms": {
+  "url": "https://www.sos.ms.gov/elections-voting/election-results",
+  "authority": "Mississippi Secretary of State",
+  "verified": true
+ },
+ "mo": {
+  "url": "https://enr.sos.mo.gov/",
+  "authority": "Missouri Secretary of State",
+  "verified": true
+ },
+ "mt": {
+  "url": "https://sosmt.gov/elections/results/",
+  "authority": "Montana Secretary of State",
+  "verified": true,
+  "note": "electionresults.mt.gov redirects here. Page says 2026 general results post after 8:00 pm on Nov 3."
+ },
+ "ne": {
+  "url": "https://electionresults.nebraska.gov/",
+  "authority": "Nebraska Secretary of State",
+  "verified": true,
+  "note": "Already configured for the Nov 3, 2026 general election."
+ },
+ "nv": {
+  "url": "https://silverstateelection.nv.gov/",
+  "authority": "Nevada Secretary of State",
+  "verified": false,
+  "note": "Long-standing SOS 'Silver State Election Night Results' site (described in 2014 coverage). Fetches of this site and nvsos.gov were blocked by bot protection (Incapsula), so content and official link could not be confirmed."
+ },
+ "nh": {
+  "url": "https://www.sos.nh.gov/elections/elections/election-results",
+  "authority": "New Hampshire Secretary of State",
+  "verified": true,
+  "note": "Official sos.nh.gov page. New Hampshire has no live statewide ENR."
+ },
+ "nj": {
+  "url": "https://www.nj.gov/state/elections/election-information-results.shtml",
+  "authority": "New Jersey Department of State, Division of Elections",
+  "verified": true,
+  "note": "Results archive. Election-night unofficial results are reported by county clerks."
+ },
+ "nm": {
+  "url": "https://electionresults.sos.nm.gov/",
+  "authority": "New Mexico Secretary of State",
+  "verified": true,
+  "note": "Already configured for the Nov 3, 2026 general election."
+ },
+ "ny": {
+  "url": "https://elections.ny.gov/election-results",
+  "authority": "New York State Board of Elections",
+  "verified": true,
+  "note": "Certified results and archive (results.elections.ny.gov). Election-night unofficial results are reported by county boards (see elections.ny.gov/election-information-0). nyenr.elections.ny.gov could not be confirmed."
+ },
+ "nc": {
+  "url": "https://er.ncsbe.gov/",
+  "authority": "North Carolina State Board of Elections",
+  "verified": true,
+  "note": "Linked from ncsbe.gov/results-data as the Election Results Dashboard."
+ },
+ "nd": {
+  "url": "https://results.sos.nd.gov/",
+  "authority": "North Dakota Secretary of State",
+  "verified": true
+ },
+ "oh": {
+  "url": "https://liveresults.ohiosos.gov/",
+  "authority": "Ohio Secretary of State",
+  "verified": true,
+  "note": "Unofficial election-night results with a NIST 1500-100 XML feed."
+ },
+ "ok": {
+  "url": "https://oklahoma.gov/elections/elections-results/election-results.html",
+  "authority": "Oklahoma State Election Board",
+  "verified": true,
+  "note": "Official results landing page. Could not confirm the live ENR site (results.okelections.gov/.us)."
+ },
+ "or": {
+  "url": "https://results.oregonvotes.gov/",
+  "authority": "Oregon Secretary of State, Elections Division",
+  "verified": true,
+  "note": "Page says ENR is a service of the Oregon SOS. Its footer text is stale (names former SOS Dennis Richardson), and no link to it was found on sos.oregon.gov. Alternative: https://sos.oregon.gov/elections/Pages/electionhistory.aspx."
+ },
+ "pa": {
+  "url": "https://www.electionreturns.pa.gov/",
+  "authority": "Pennsylvania Department of State",
+  "verified": false,
+  "note": "Linked from the official pa.gov election-data page and named as the returns site in DOS press releases, but direct fetch failed, so I could not confirm it loads."
+ },
+ "ri": {
+  "url": "https://elections.ri.gov/elections/previous-election-results",
+  "authority": "Rhode Island Board of Elections",
+  "verified": true,
+  "note": "Results landing page. 2026 live results are on electionresults.ri.gov; earlier ones on ri.gov/election/results."
+ },
+ "sc": {
+  "url": "https://scvotes.gov/election-results/",
+  "authority": "South Carolina State Election Commission",
+  "verified": true,
+  "note": "Links to ENR on enr-scvotes.org."
+ },
+ "sd": {
+  "url": "https://electionresults.sd.gov/",
+  "authority": "South Dakota Secretary of State",
+  "verified": true,
+  "note": "Showed 'Testing In Progress' for the Nov 3, 2026 general election."
+ },
+ "tn": {
+  "url": "https://elections.tn.gov/",
+  "authority": "Tennessee Secretary of State, Division of Elections",
+  "verified": true,
+  "note": "Unofficial election-night results with SOS branding. Historical results: https://sos.tn.gov/elections/results."
+ },
+ "tx": {
+  "url": "https://goelect.txelections.civixapps.com/ivis-enr-ui/races",
+  "authority": "Texas Secretary of State",
+  "verified": true,
+  "note": "SOS results landing page. It links the current ENR app at goelect.txelections.civixapps.com/ivis-enr-ui/races (the old results.texas-election.com did not load). Switched to live ENR app linked from SOS."
+ },
+ "ut": {
+  "url": "https://vote.utah.gov/election-results-data-historical-information",
+  "authority": "Utah Lieutenant Governor's Office",
+  "verified": true,
+  "note": "Official results/historical page. electionresults.utah.gov loads a generic results app, but no Utah branding or official link to it was confirmed."
+ },
+ "vt": {
+  "url": "https://electionresults.vermont.gov/",
+  "authority": "Vermont Secretary of State",
+  "verified": true,
+  "note": "Linked as 'Election Night Results' from sos.vermont.gov."
+ },
+ "va": {
+  "url": "https://www.elections.virginia.gov/resultsreports/election-results/",
+  "authority": "Virginia Department of Elections",
+  "verified": true,
+  "note": "Links to ENR on enr.elections.virginia.gov, including Nov 3, 2026."
+ },
+ "wa": {
+  "url": "https://www.sos.wa.gov/elections/data-research/election-data-and-maps/election-results-and-voters-pamphlets",
+  "authority": "Washington Secretary of State",
+  "verified": true,
+  "note": "Links to ENR on results.vote.wa.gov / results.votewa.gov."
+ },
+ "wv": {
+  "url": "https://results.enr.clarityelections.com/WV/",
+  "authority": "West Virginia Secretary of State",
+  "verified": false,
+  "note": "WVSOS election-night reporting runs on Clarity (per WVSOS announcements republished by WV Press). sos.wv.gov results pages could not be fetched to confirm a stable landing link; apps.sos.wv.gov/elections/results covers only 2008-2017."
+ },
+ "wi": {
+  "url": "https://elections.wi.gov/elections/election-results",
+  "authority": "Wisconsin Elections Commission",
+  "verified": true,
+  "note": "Official/certified results only. Page says Wisconsin has no central unofficial election-night results site; counties and municipalities report."
+ },
+ "wy": {
+  "url": "https://sos.wyo.gov/Elections/ElectionResults.aspx",
+  "authority": "Wyoming Secretary of State",
+  "verified": true,
+  "note": "Results by year, 1996-2026."
+ }
+}

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% from "macros.html" import picture, byline, card, vote_box %}
+{% block main %}
+<h1 class="sr">Capitol Journal: {{ site.tagline }}</h1>
+{% if lead %}
+<div class="wrap">
+  <section class="lead" aria-label="Top story">
+    <article class="lead-story">
+      <a class="lead-img" href="{{ lead.url }}" tabindex="-1" aria-hidden="true">{{ picture(lead.photo, sizes="(max-width: 700px) 100vw, 66vw", eager=True) }}</a>
+      <a class="kicker" href="/{{ lead.section }}/">{{ lead.sec.name }}</a>
+      <h2 class="lead-h"><a href="{{ lead.url }}">{{ lead.title }}</a></h2>
+      <p class="dek">{{ lead.dek }}</p>
+      {{ byline(lead) }}
+    </article>
+    <aside class="top" aria-labelledby="top-h">
+      <h2 id="top-h" class="rule-h">Top Stories</h2>
+      <ul>
+        {% for a in top %}
+        <li><a class="kicker" href="/{{ a.section }}/">{{ a.sec.name }}</a><h3><a href="{{ a.url }}">{{ a.title }}</a></h3></li>
+        {% endfor %}
+      </ul>
+    </aside>
+  </section>
+</div>
+{% endif %}
+
+<section class="band" aria-labelledby="band-h">
+  <div class="wrap band-grid">
+    <h2 id="band-h">The Next Vote<small>2026 Midterm Elections</small></h2>
+    <div class="band-it"><span class="label">Election Day</span><p><span data-countdown="{{ site.election_date }}">Tuesday, Nov. 3, 2026</span></p></div>
+    <div class="band-it"><span class="label">On the ballot</span><p>All 435 House seats, 35 Senate seats and 36 governorships.</p></div>
+    <div class="band-it"><span class="label">Results</span><p><a href="/elections/#results">Official results sites for every state</a></p></div>
+    <div class="band-it"><span class="label">How to vote</span><p><a href="https://vote.gov/" rel="noopener">Official information at vote.gov</a></p></div>
+  </div>
+</section>
+
+<div class="wrap">
+  {% for s in sections if by_sec[s.slug] and s.slug != "opinion" %}
+  <section class="sec" aria-labelledby="sec-{{ s.slug }}">
+    <div class="sec-hd"><h2 id="sec-{{ s.slug }}"><a href="/{{ s.slug }}/">{{ s.name }}</a></h2><a class="more" href="/{{ s.slug }}/">More {{ s.name }} <span aria-hidden="true">→</span></a></div>
+    <div class="cards">{% for a in by_sec[s.slug][:4] %}{{ card(a) }}{% endfor %}</div>
+  </section>
+  {% endfor %}
+
+  <section class="sec two">
+    <div>
+      <div class="sec-hd"><h2>Latest</h2></div>
+      {% if latest %}
+      <ul class="latest">
+        {% for a in latest %}
+        <li><time datetime="{{ a.date.isoformat() }}">{{ a.date|ap_date }}</time><div><a class="kicker" href="/{{ a.section }}/">{{ a.sec.name }}</a><h3><a href="{{ a.url }}">{{ a.title }}</a></h3></div></li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="empty">Our first stories are being reported and checked. They will appear here as soon as they are published.</p>
+      {% endif %}
+    </div>
+    <div>
+      <div class="sec-hd"><h2>How We Report</h2></div>
+      <ul class="pledge">
+        <li><strong>Every story is signed</strong> and dated, with updates marked.</li>
+        <li><strong>Every fact is linked</strong> to the record it comes from: a vote, a filing, a statute, an official statement.</li>
+        <li><strong>If we cannot confirm it, we say so</strong> or leave it out.</li>
+        <li><strong>Errors are corrected</strong> in the story, with a note.</li>
+      </ul>
+      <p><a class="more" href="/standards/">Read our editorial standards <span aria-hidden="true">→</span></a></p>
+      {{ vote_box(site) }}
+    </div>
+  </section>
+
+  {% if by_sec["opinion"] %}
+  <section class="sec op" aria-labelledby="sec-opinion">
+    <div class="sec-hd"><h2 id="sec-opinion"><a href="/opinion/">Opinion</a></h2><a class="more" href="/opinion/">More Opinion <span aria-hidden="true">→</span></a></div>
+    <div class="cards">{% for a in by_sec["opinion"][:4] %}{{ card(a, img=False) }}{% endfor %}</div>
+  </section>
+  {% endif %}
+</div>
+{% endblock %}
