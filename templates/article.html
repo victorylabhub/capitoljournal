@@ -24,7 +24,10 @@
   {% if a.photo %}
   <figure class="art-fig">
     {{ picture(a.photo, sizes="(max-width: 900px) 100vw, 900px", eager=True) }}
-    <figcaption>{{ a.image_caption or a.photo.alt }}{% if a.image_credit %} <span class="credit">{{ a.image_credit }}</span>{% endif %}</figcaption>
+    <details class="img-info">
+      <summary><span aria-hidden="true">i</span><span class="sr">Image information</span></summary>
+      <figcaption>{{ a.image_caption or a.photo.alt }}{% if a.image_credit %} <span class="credit">{{ a.image_credit }}</span>{% endif %}</figcaption>
+    </details>
   </figure>
   {% endif %}
   <div class="body">{{ a.html|safe }}</div>
